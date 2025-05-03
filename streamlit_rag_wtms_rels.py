@@ -1,7 +1,7 @@
 ﻿import os
 import streamlit as st
 
-from langchain_community.document_loaders import UnstructuredMarkdownLoader
+from langchain.document_loaders import UnstructuredMarkdownLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 
