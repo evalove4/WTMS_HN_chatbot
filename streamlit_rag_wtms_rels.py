@@ -1,4 +1,8 @@
-﻿import os
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
+import os
 import streamlit as st
 
 from langchain_community.document_loaders import UnstructuredMarkdownLoader
@@ -8,10 +12,6 @@ from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
-
-__import__('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 from langchain_chroma import Chroma
 os.environ["OPENAI_API_KEY"] = st.secrets['OPENAI_API_KEY']
