@@ -3,7 +3,7 @@ import sys
 import pysqlite3
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
-export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
+#export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
 
 import os
 import streamlit as st
