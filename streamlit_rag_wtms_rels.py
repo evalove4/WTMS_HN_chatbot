@@ -2,7 +2,10 @@ __import__('pysqlite3')
 import sys
 import pysqlite3
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 pip install --upgrade protobuf
+
+export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
 
 import os
 import streamlit as st
