@@ -1,7 +1,8 @@
 __import__('pysqlite3')
 import sys
-import pysqlite3
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
+from langchain_chroma import Chroma
 
 #export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
 
@@ -16,7 +17,7 @@ from langchain.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 
-from langchain_chroma import Chroma
+#from langchain_chroma import Chroma
 os.environ["OPENAI_API_KEY"] = st.secrets['OPENAI_API_KEY']
 
 
