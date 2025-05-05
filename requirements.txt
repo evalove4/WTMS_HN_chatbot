@@ -8,3 +8,5 @@ langchain-chroma
 unstructured
 pysqlite3-binary
 protobuf==3.20.0
+markdown
+pypdf
