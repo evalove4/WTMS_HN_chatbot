@@ -56,7 +56,7 @@ def format_docs(docs):
 # Initialize the LangChain components
 @st.cache_resource
 def chaining():
-    file_path = r"G:\내 드라이브\TMSChatbot_WTMS_HN10\output/all_pages.md"
+    file_path = r"./all_pages.md"
     pages = load_and_split_md(file_path)
     vectorstore = get_vectorstore(pages)
     retriever = vectorstore.as_retriever()
