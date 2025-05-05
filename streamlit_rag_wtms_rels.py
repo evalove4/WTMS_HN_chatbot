@@ -88,7 +88,7 @@ def chaining():
     return rag_chain
 
 # Streamlit UI
-st.header("WTMS Q&A 챗봇 💬 📚")
+st.header("호남권 WTMS Q&A 챗봇 💬 ")
 rag_chain = chaining()
 
 
