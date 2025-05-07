@@ -89,7 +89,7 @@ def chaining():
 
 # Streamlit UI
 st.header("호남권 WTMS Q&A 챗봇 💬 ")
-st.subheader(" 본 챗봇 서비스는 호남권 수질TMS 관제센터에 의해 운영되며 챗봇의 답변에는 오류가 있을 수 있으니 중요한 사항은 반드시 법령 등 출처를 확인해보시기 바랍니다.", anchor="https://www.soosiro.or.kr/index.do", *, help=None, divider=False)
+st.subheader(" 본 챗봇 서비스는 호남권 수질TMS 관제센터에 의해 운영되며 챗봇의 답변에는 오류가 있을 수 있으니 중요한 사항은 반드시 법령 등 출처를 확인해보시기 바랍니다.", anchor="https://www.soosiro.or.kr/index.do")
 rag_chain = chaining()
 
 
