@@ -89,11 +89,12 @@ def chaining():
 
 # Streamlit UI
 st.header("호남권 WTMS Q&A 챗봇 💬 ")
+st.subheader(" 본 챗봇 서비스는 호남권 수질TMS 관제센터에 의해 운영되며 챗봇의 답변에는 오류가 있을 수 있으니 중요한 사항은 반드시 법령 등 출처를 확인해보시기 바랍니다.", anchor="https://www.soosiro.or.kr/index.do", *, help=None, divider=False)
 rag_chain = chaining()
 
 
 if "messages" not in st.session_state:
-    st.session_state["messages"] = [{"role": "assistant", "content": "수질관제시스템 대해 무엇이든 물어보세요!"}]
+    st.session_state["messages"] = [{"role": "assistant", "content": "수질관제시스템 대해 무엇이든 물어보세요!."}]
 
 for msg in st.session_state.messages:
     st.chat_message(msg['role']).write(msg['content'])
