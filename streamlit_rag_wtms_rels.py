@@ -78,7 +78,7 @@ def chaining():
         ]
     )
 
-    llm = ChatOpenAI(model="gpt-4o")
+    llm = ChatOpenAI(model="gpt-4o-mini")
     rag_chain = (
         {"context": retriever | format_docs, "input": RunnablePassthrough()}
         | qa_prompt
