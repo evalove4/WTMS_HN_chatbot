@@ -88,8 +88,9 @@ def chaining():
     return rag_chain
 
 # Streamlit UI
-st.header("호남권 WTMS Q&A 챗봇 💬 ")
-st.markdown(" 본 서비스는 한국환경공단 호남권 수질TMS 관제센터에 의해 운영되며 챗봇의 답변에는 오류가 있을 수 있으니 중요한 사항은 반드시 법령 등 출처를 확인해보시기 바랍니다. :open_book:")
+st.header("호남권 WTMS 챗봇 - 구버전 💬 ")
+st.markdown(" 본 서비스는 구 버전으로서 업데이트가 되지 않습니다. 서비스 개선등은 아래 링크된 공식계정의 챗봇에서 가능합니다. :open_book:")
+st.link_button("LINK", "https://wtmshn.streamlit.app/", icon=":material/link:")
 rag_chain = chaining()
 
 
